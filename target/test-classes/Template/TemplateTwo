@@ -1,0 +1,87 @@
+package com.test.kerja.sqa.sqamobileappiumjavabdd;
+
+import java.net.URL;
+
+import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
+
+public class TestCalculator {
+
+	static AppiumDriver<MobileElement> driver;
+
+	public static void main(String[] args) {
+		try {
+			openCalculator();
+		} catch (Exception e) {
+			System.out.println(e.getCause());
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+		}
+	}
+
+	// sesi 1 kelas juara coding 1 5 januari 2022
+	public static void openCalculator() throws Exception {
+
+		DesiredCapabilities capabilities = new DesiredCapabilities();
+		//DARI CLI
+		//https://www.youtube.com/watch?v=jAWh6q9AAlI 2:18:00 -2:
+		capabilities.setCapability("deviceName", "Pixel_2_API_27");
+		capabilities.setCapability("uuid", "emulator-5554");
+//		capabilities.setCapability("platform", "Android");
+		capabilities.setCapability("platformName", "Android");
+		capabilities.setCapability("platformVersion", "8.1.0");
+		//DARI APP INFO
+		capabilities.setCapability("appPackage", "com.android.calculator2");//dari aplikasi android app info download di google apps store
+		capabilities.setCapability("appActivity", "com.android.calculator2.Calculator");//dari aplikasi android app info download di google apps store
+
+		// Sementara yang bisa cuman appium dan UiAutomator2 saja
+//		capabilities.setCapability("automationName","Appium");//default automationName, jadi kalau ga pakai automationName otomatis ke appium value nya
+		capabilities.setCapability("automationName","UiAutomator2");
+//		capabilities.setCapability("automationName","UiAutomator1");
+//		capabilities.setCapability("automationName","Espresso");
+		URL url = new URL("http://127.0.0.1:4723/wd/hub");// baca di documentasi appium server
+
+		driver = new AppiumDriver<MobileElement>(url, capabilities);// baca di documentasi appium
+
+		System.out.println("Appium Testing started...");
+
+		MobileElement satu = driver.findElement(By.id("com.android.calculator2:id/digit_1"));
+//		                                              com.android.calculator2:id/digit_2
+		MobileElement dua = driver.findElement(By.id("com.android.calculator2:id/digit_2"));
+
+		MobileElement tambah = driver.findElement(By.id("com.android.calculator2:id/op_add"));
+
+		MobileElement samadengan = driver.findElement(By.id("com.android.calculator2:id/eq"));
+
+		MobileElement hasil = driver.findElement(By.id("com.android.calculator2:id/result"));
+
+		satu.click();
+
+		tambah.click();
+
+		dua.click();
+
+		samadengan.click();
+
+		System.out.println("hasilnya : " + hasil.getText());
+
+		MobileElement moreoptions = driver
+				.findElement(By.xpath("//android.widget.ImageButton[@content-desc=\"More options\"]"));
+
+		moreoptions.click();
+
+//		MobileElement openlicense = driver.findElement(By.xpath(
+//				"/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[4]"));
+		MobileElement openlicense = driver.findElement(By.xpath(
+				"/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[4]"));
+
+		openlicense.click();
+
+	}
+
+	// sesi 2 kelas juara coding 1 5 januari 2022
+}

@@ -1,0 +1,20 @@
+DesiredCapabilities capabilities = new DesiredCapabilities();
+		//DARI CLI
+		//https://www.youtube.com/watch?v=jAWh6q9AAlI 2:18:00 -2:
+		capabilities.setCapability("deviceName", "Pixel_2_API_27");
+		capabilities.setCapability("uuid", "emulator-5554");
+//		capabilities.setCapability("platform", "Android");
+		capabilities.setCapability("platformName", "Android");
+		capabilities.setCapability("platformVersion", "8.1.0");
+		//DARI APP INFO
+		capabilities.setCapability("appPackage", "com.android.calculator2");//dari aplikasi android app info download di google apps store
+		capabilities.setCapability("appActivity", "com.android.calculator2.Calculator");//dari aplikasi android app info download di google apps store
+
+		// Sementara yang bisa cuman appium dan UiAutomator2 saja
+//		capabilities.setCapability("automationName","Appium");//default automationName, jadi kalau ga pakai automationName otomatis ke appium value nya
+		capabilities.setCapability("automationName","UiAutomator2");
+//		capabilities.setCapability("automationName","UiAutomator1");
+//		capabilities.setCapability("automationName","Espresso");
+		URL url = new URL("http://127.0.0.1:4723/wd/hub");// baca di documentasi appium server
+
+		driver = new AppiumDriver<MobileElement>(url, capabilities);// baca di documentasi appium
