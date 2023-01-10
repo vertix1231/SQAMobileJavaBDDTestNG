@@ -25,9 +25,8 @@ import io.appium.java_client.MobileElement;
 
 public class TestCalculatorApps extends Reporting {
 	
-	AppiumDriver<MobileElement> driver;
-	
-	FungsiKalkulator kalkulator;
+	private static AppiumDriver<MobileElement> driver;
+	private static FungsiKalkulator kalkulator;
 	
 		
 	@BeforeTest
@@ -36,7 +35,6 @@ public class TestCalculatorApps extends Reporting {
 		DriverSingleton driverSingleton = DriverSingleton.getInstance();
 		driver = driverSingleton.getDriver();
 		kalkulator = new FungsiKalkulator();
-		
 		System.out.println("Appium Testing started...");
 	}
 	

@@ -12,7 +12,7 @@ public class Reporting {
 	protected ExtentReports extentReports;
 	@BeforeSuite
 	public void reportSetup() {
-		htmlreporter = new ExtentSparkReporter("src/test/resources/report.html");
+		htmlreporter = new ExtentSparkReporter("src/test/resources/report_mobiletest_appium_teskerja.html");
 		extentReports = new ExtentReports();
 		extentReports.attachReporter(htmlreporter);
 	}

@@ -2,36 +2,36 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-29T23:42:46 ICT" name="Default suite" finished-at="2022-11-29T23:43:06 ICT" duration-ms="19310">
+  <suite started-at="2022-12-28T10:10:11 ICT" name="Default suite" finished-at="2022-12-28T10:10:33 ICT" duration-ms="21790">
     <groups>
     </groups>
-    <test started-at="2022-11-29T23:42:46 ICT" name="Default test" finished-at="2022-11-29T23:43:06 ICT" duration-ms="19310">
+    <test started-at="2022-12-28T10:10:11 ICT" name="Default test" finished-at="2022-12-28T10:10:33 ICT" duration-ms="21790">
       <class name="com.test.kerja.sqa.sqamobileappiumjavabdd.TestCalculatorApps">
-        <test-method is-config="true" signature="reportSetup()[pri:0, instance:com.test.kerja.sqa.sqamobileappiumjavabdd.TestCalculatorApps@5562c41e]" started-at="2022-11-29T23:42:46 ICT" name="reportSetup" finished-at="2022-11-29T23:42:46 ICT" duration-ms="283" status="PASS">
+        <test-method is-config="true" signature="reportSetup()[pri:0, instance:com.test.kerja.sqa.sqamobileappiumjavabdd.TestCalculatorApps@5562c41e]" started-at="2022-12-28T10:10:11 ICT" name="reportSetup" finished-at="2022-12-28T10:10:11 ICT" duration-ms="238" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportSetup -->
-        <test-method is-config="true" signature="openCalculator()[pri:0, instance:com.test.kerja.sqa.sqamobileappiumjavabdd.TestCalculatorApps@5562c41e]" started-at="2022-11-29T23:42:46 ICT" name="openCalculator" finished-at="2022-11-29T23:42:54 ICT" duration-ms="7314" status="PASS">
+        <test-method is-config="true" signature="openCalculator()[pri:0, instance:com.test.kerja.sqa.sqamobileappiumjavabdd.TestCalculatorApps@5562c41e]" started-at="2022-12-28T10:10:11 ICT" name="openCalculator" finished-at="2022-12-28T10:10:21 ICT" duration-ms="9991" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openCalculator -->
-        <test-method signature="fungsi1Tambah()[pri:1, instance:com.test.kerja.sqa.sqamobileappiumjavabdd.TestCalculatorApps@5562c41e]" started-at="2022-11-29T23:42:54 ICT" name="fungsi1Tambah" finished-at="2022-11-29T23:42:57 ICT" duration-ms="2754" status="PASS">
+        <test-method signature="fungsi1Tambah()[pri:1, instance:com.test.kerja.sqa.sqamobileappiumjavabdd.TestCalculatorApps@5562c41e]" started-at="2022-12-28T10:10:21 ICT" name="fungsi1Tambah" finished-at="2022-12-28T10:10:24 ICT" duration-ms="2794" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fungsi1Tambah -->
-        <test-method signature="fungsi2Kali()[pri:2, instance:com.test.kerja.sqa.sqamobileappiumjavabdd.TestCalculatorApps@5562c41e]" started-at="2022-11-29T23:42:57 ICT" name="fungsi2Kali" finished-at="2022-11-29T23:42:59 ICT" duration-ms="2787" status="PASS">
+        <test-method signature="fungsi2Kali()[pri:2, instance:com.test.kerja.sqa.sqamobileappiumjavabdd.TestCalculatorApps@5562c41e]" started-at="2022-12-28T10:10:24 ICT" name="fungsi2Kali" finished-at="2022-12-28T10:10:27 ICT" duration-ms="2807" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fungsi2Kali -->
-        <test-method signature="fungsi22Kali()[pri:3, instance:com.test.kerja.sqa.sqamobileappiumjavabdd.TestCalculatorApps@5562c41e]" started-at="2022-11-29T23:42:59 ICT" name="fungsi22Kali" finished-at="2022-11-29T23:43:03 ICT" duration-ms="3179" status="PASS">
+        <test-method signature="fungsi22Kali()[pri:3, instance:com.test.kerja.sqa.sqamobileappiumjavabdd.TestCalculatorApps@5562c41e]" started-at="2022-12-28T10:10:27 ICT" name="fungsi22Kali" finished-at="2022-12-28T10:10:30 ICT" duration-ms="2822" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fungsi22Kali -->
-        <test-method signature="fungsi222Kali()[pri:4, instance:com.test.kerja.sqa.sqamobileappiumjavabdd.TestCalculatorApps@5562c41e]" started-at="2022-11-29T23:43:03 ICT" name="fungsi222Kali" finished-at="2022-11-29T23:43:06 ICT" duration-ms="3241" status="PASS">
+        <test-method signature="fungsi222Kali()[pri:4, instance:com.test.kerja.sqa.sqamobileappiumjavabdd.TestCalculatorApps@5562c41e]" started-at="2022-12-28T10:10:30 ICT" name="fungsi222Kali" finished-at="2022-12-28T10:10:33 ICT" duration-ms="3342" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fungsi222Kali -->
-        <test-method is-config="true" signature="reportTeardown()[pri:0, instance:com.test.kerja.sqa.sqamobileappiumjavabdd.TestCalculatorApps@5562c41e]" started-at="2022-11-29T23:43:06 ICT" name="reportTeardown" finished-at="2022-11-29T23:43:06 ICT" duration-ms="311" status="PASS">
+        <test-method is-config="true" signature="reportTeardown()[pri:0, instance:com.test.kerja.sqa.sqamobileappiumjavabdd.TestCalculatorApps@5562c41e]" started-at="2022-12-28T10:10:33 ICT" name="reportTeardown" finished-at="2022-12-28T10:10:33 ICT" duration-ms="349" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportTeardown -->
