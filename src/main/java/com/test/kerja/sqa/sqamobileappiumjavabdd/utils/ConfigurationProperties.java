@@ -9,14 +9,10 @@ import lombok.Getter;
 @Component
 @PropertySource("framework.properties")
 public class ConfigurationProperties {
-	@Value("${browser}")
-	private String browser;
-	@Value("${expectedtext}")
-	private String expectedtext;
-	@Value("${dashboardexpectedtext}")
-	private String dashboardexpectedtext;
-	@Value("${loginhighlightexpected}")
-	private String loginhighlightexpected;
-	@Value("${admintabadminmenu}")
-	private String admintabadminmenu;
+	@Value("${mainContactTitle}")
+	private String mainContactTitle;
+	@Value("${selectedContactTitleTitle}")
+	private String selectedContactTitleTitle;
+	@Value("${detailnumberselectedContactTitle}")
+	private String detailnumberselectedContactTitle;
 }
